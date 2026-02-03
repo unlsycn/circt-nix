@@ -59,7 +59,8 @@ in stdenv.mkDerivation {
       --replace-fail '"unknown git version"' '"firtool-${version}"'
     
     find test -type f -exec \
-      sed -i -e 's,--test /usr/bin/env,--test ${lib.getBin coreutils}/bin/env,' \{\} \;
+      sed -i -e 's,--test /usr/bin/env,--test ${lib.getBin coreutils}/bin/env,' \
+             -e 's,--test /usr/bin/true,--test ${lib.getBin coreutils}/bin/true,' \{\} \;
   ''
   # slang library renamed to 'svlang'.
   + lib.optionalString enableSlang ''
