@@ -3,7 +3,7 @@
 
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/3b7b015de04db0849ef7b929ee5783247c07d80b";
+    nixpkgs.url = "github:NixOS/nixpkgs/master";
     circt-src.url = "github:llvm/circt";
     circt-src.flake = false;
     llvm-submodule-src = {
@@ -11,7 +11,7 @@
       owner = "llvm";
       repo = "llvm-project";
       # From circt submodule
-      rev = "b32e067e97003db47aed52edc9ef8c3c30899b91";
+      rev = "b7c1a6f8b447fba6fff47d309eb7ba1bc22e8c53";
       flake = false;
     };
     slang-src.url = "github:MikePopoloski/slang";

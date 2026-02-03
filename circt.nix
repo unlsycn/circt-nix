@@ -33,7 +33,7 @@ let
     in
       "g${date}_${rev}";
 
-  tag = "1.139.0";
+  tag = "1.140.0";
   versionSuffix = mkVer circt-src;
   version = "${tag}${versionSuffix}";
 in stdenv.mkDerivation {
@@ -51,7 +51,6 @@ in stdenv.mkDerivation {
     ./patches/circt-mlir-tblgen-path.patch
     ./patches/circt-mlir-runner-target.patch
     ./patches/circt-install-dir.patch
-    ./patches/circt-install-includes.patch
     ./patches/circt-lit-dylib-paths.patch
   ];
   postPatch = ''

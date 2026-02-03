@@ -3,11 +3,11 @@
     "circt-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1768283381,
-        "narHash": "sha256-MGSiw3CqBHDpfEkB5XY/S4NIBzA1SeihuP4ZoqW47B8=",
+        "lastModified": 1770074365,
+        "narHash": "sha256-U/FJ/ru+ZPPHDwbuXk2XYdYAUo4gC+MOcMvsd/mUXqI=",
         "owner": "llvm",
         "repo": "circt",
-        "rev": "8a7a7e4d517a7ffecc999795d291a4767b94c7c9",
+        "rev": "4c66f782a5b32f4dd068dd91173cdfe3fd79ad84",
         "type": "github"
       },
       "original": {
@@ -53,33 +53,33 @@
     "llvm-submodule-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1764901536,
-        "narHash": "sha256-fmEG+5QVXWj7I9lWKOTXI+0qsvkPi1oI2jeyYjgAUg0=",
+        "lastModified": 1769658559,
+        "narHash": "sha256-2oioBhX79fsx/7yeUXPjkWOXaObwAjDTmDdJdGaGZVI=",
         "owner": "llvm",
         "repo": "llvm-project",
-        "rev": "b32e067e97003db47aed52edc9ef8c3c30899b91",
+        "rev": "b7c1a6f8b447fba6fff47d309eb7ba1bc22e8c53",
         "type": "github"
       },
       "original": {
         "owner": "llvm",
         "repo": "llvm-project",
-        "rev": "b32e067e97003db47aed52edc9ef8c3c30899b91",
+        "rev": "b7c1a6f8b447fba6fff47d309eb7ba1bc22e8c53",
         "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1761582087,
-        "narHash": "sha256-kDwaHNQv6lpjiJYQbW3UyzCR2AlZpY46fGecmm+jmS8=",
+        "lastModified": 1770084216,
+        "narHash": "sha256-Ij9J/9VuSAvdTqzbNLKtwYzAqt8J0nnqnht4mzCyN1M=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3b7b015de04db0849ef7b929ee5783247c07d80b",
+        "rev": "dfcc8a7bfb5b581331aeb110204076188636c7a2",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
+        "ref": "master",
         "repo": "nixpkgs",
-        "rev": "3b7b015de04db0849ef7b929ee5783247c07d80b",
         "type": "github"
       }
     },
@@ -96,11 +96,11 @@
     "slang-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1768074645,
-        "narHash": "sha256-vOsDkif2I0plJbByBGamP6P/Hn1CWsBPe0AM0Uhnuts=",
+        "lastModified": 1769791679,
+        "narHash": "sha256-APUUWWr5N6Vi4SW/d6NRu3WF4wib5tnlhygSxf4TbXU=",
         "owner": "MikePopoloski",
         "repo": "slang",
-        "rev": "56d0b585de8a73da3df57290a9dd5020aa1c6892",
+        "rev": "bd1b933ac642b51bbb2a15e6d8a4fa4fa5c4adc6",
         "type": "github"
       },
       "original": {
