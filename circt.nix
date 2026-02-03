@@ -21,6 +21,7 @@
 , enableLLHD ? false # Drops llhd-sim -> lib output dep.
 , withVerilator ? !stdenv.hostPlatform.isDarwin && stdenv.buildPlatform == stdenv.hostPlatform
 , z3
+, buildSharedLibs ? false
 }:
 
 
@@ -80,6 +81,7 @@ in stdenv.mkDerivation {
     "-DCIRCT_LIBRARY_DIR=${placeholder "lib"}/lib"
     "-DCIRCT_LLHD_SIM_ENABLED=${if enableLLHD then "ON" else "OFF"}"
     "-DMLIR_TABLEGEN_EXE=${lib.getOutput "bin" mlir}/bin/mlir-tblgen" # assumes not-cross for now
+    (lib.cmakeBool "BUILD_SHARED_LIBS" buildSharedLibs)
   ] ++ lib.optional enableDocs "-DCIRCT_INCLUDE_DOCS=ON"
     ++ lib.optional enableAssertions "-DLLVM_ENABLE_ASSERTIONS=ON"
     ++ lib.optionals enableSlang [

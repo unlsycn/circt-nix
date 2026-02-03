@@ -4,6 +4,7 @@
 , enableAssertions ? true
 , hostOnly ? true
 , enableSharedLibraries ? false
+, buildSharedLibs ? false
 , buildLLVMPackages_circt
 }:
 let
@@ -42,6 +43,7 @@ let
     # set both to avoid attempting linking against libLLVM*.so if not built.
     (lib.cmakeBool "LLVM_BUILD_LLVM_DYLIB" enableSharedLibraries)
     (lib.cmakeBool "LLVM_LINK_LLVM_DYLIB" enableSharedLibraries)
+    (lib.cmakeBool "BUILD_SHARED_LIBS" buildSharedLibs)
   ] ++ lib.optional enableAssertions (lib.cmakeBool "LLVM_ENABLE_ASSERTIONS" true)
     ++ lib.optional hostOnly "-DLLVM_TARGETS_TO_BUILD=host";
 
