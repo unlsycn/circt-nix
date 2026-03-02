@@ -32,7 +32,7 @@
   enableLLHD ? false, # Drops llhd-sim -> lib output dep.
   withVerilator ? !stdenv.hostPlatform.isDarwin && stdenv.buildPlatform == stdenv.hostPlatform,
   z3,
-  buildSharedLibs ? false,
+  buildSharedLibs ? libllvm.buildSharedLibs or false,
 }:
 
 # TODO: or-tools, needs cmake bits maybe?
